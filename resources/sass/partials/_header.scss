@@ -1,0 +1,48 @@
+header.banner {
+  background: #000;
+  line-height: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 60px;
+
+  ul {
+    li {
+      display: inline-block;
+      margin: 0 8px;
+    }
+  }
+
+  .user-bar {
+    .user-menu {
+      position: relative;
+      padding: 8px 30px 10px;
+      display: block;
+
+      .dropdown {
+        display: none;
+        position: absolute;
+        top: 34px;
+        right: 0px;
+        background-color: #111;
+
+        li {
+          display: block;
+          padding: 8px 30px 10px;
+          margin: 0;
+
+          &:hover {
+            background: #000;
+          }
+        }
+      }
+
+      &:hover {
+        .dropdown {
+          display: block;
+
+        }
+      }
+    }
+  }
+}

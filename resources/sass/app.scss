@@ -1,0 +1,22 @@
+
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Oswald:500|Source+Sans+Pro:400,600');
+
+// Variables
+@import 'reset';
+@import 'variables';
+@import 'layout/layout';
+@import 'helpers/flex_helpers';
+@import 'helpers/text_helpers';
+@import 'templates/home_videos';
+@import 'partials';
+
+body {
+  background-color: $body-bg;
+  font-family: $sans-serif-body;
+  color: $body-text;
+}
+
+img {
+  max-width: 100%;
+}

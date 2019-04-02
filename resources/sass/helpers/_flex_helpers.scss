@@ -1,0 +1,13 @@
+.flex {
+    display: flex;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+@media screen and (max-width: 767px) {
+    .flex-wrap\:mobile {
+        flex-wrap: wrap;
+    }
+}

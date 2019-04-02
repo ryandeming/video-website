@@ -1,0 +1,34 @@
+h1,
+h2,
+h3 {
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 500;
+  -webkit-font-smoothing: antialiased;
+  font-family: $sans-serif-title;
+
+  span.underline {
+    border-bottom: 1px solid $accent;
+    padding-bottom: 0.25rem;
+  }
+}
+
+h4 {
+  font-size: 1.125rem
+}
+
+.text-primary {
+  color: $primary;
+}
+
+.text-accent {
+  color: $accent;
+}
+
+p {
+  line-height: 1.5rem;
+
+  &.justify {
+    text-align: justify;
+  }
+}

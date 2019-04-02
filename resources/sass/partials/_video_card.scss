@@ -1,0 +1,84 @@
+.video-card,
+.series-card {
+  width: calc(25% - 16px);
+  margin: 0 16px 16px 0;
+  position: relative;
+  overflow: hidden;
+
+  @media screen and (max-width: 1100px) {
+    width: calc(33% - 16px);
+  }
+
+  @media screen and (max-width: 780px) {
+    width: calc(50% - 16px);
+  }
+
+  @media screen and (max-width: 480px) {
+    width: calc(100% - 16px);
+  }
+
+  &.base-thirds {
+    width: calc(33% - 16px);
+  
+    @media screen and (max-width: 980px) {
+      width: calc(50% - 16px);
+    }
+  
+    @media screen and (max-width: 580px) {
+      width: calc(100% - 16px);
+    }
+  }
+
+  span.overlay-text {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 12px;
+    z-index: 2;
+  }
+
+  .thumbnail {
+    position: relative;
+    background: #000;
+
+    .overlay {
+      background: linear-gradient(180deg, rgba(0,0,0,0.65) 0%, rgba(0,0,0,0) 100%);
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      z-index: 1;
+    }
+
+    img {
+      width: 100%;
+      margin-bottom: 0.15rem;
+      object-fit: cover;
+      height: 150px;
+      display: block;
+
+      @media screen and (max-width: 480px) {
+        height: 200px;
+      }
+    }
+  }
+
+  p {
+    font-size: 0.875rem;
+
+    span.left {
+      font-size: 0.875rem;
+      width: 90%;
+      display: inline-block;
+    }
+
+    span.right {
+      position: absolute;
+      right: 0;
+      font-size: 0.75rem;
+    }
+  }
+}
